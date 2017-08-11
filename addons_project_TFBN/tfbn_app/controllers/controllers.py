@@ -47,7 +47,5 @@ class MyAuthSignupHome(AuthSignupHome):
         self._signup_with_values(qcontext.get('token'), values) # calls signup() on ResUsers, then authenticates or fails
         request.env.cr.commit()
 
-    # TODO add a check box to signify acceptance of t&cs for the TFBN system 
-    #           + prohibit registration in case box is not checked (e.g. gray out the signup button)
 
 
