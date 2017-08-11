@@ -1,0 +1,38 @@
+<!-- 
+	The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+	Copyright (C) 2017 Marc Lijour
+	https://www.linkedin.com/in/marclijour
+	https://github.com/marclijour
+
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<odoo>
+    <data>	
+        <template id="website.layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright">
+            <xpath expr="//footer" position="inside">
+                <div class="container mt16 mb8">
+                <!--                 
+                    <div class="pull-right" t-ignore="true" t-if="not editable">
+                        Create a <a href="http://www.odoo.com/page/website-builder">free website</a> with
+                        <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>
+                    </div>
+                -->
+                    <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
+                        Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>
+                    </div>
+                </div>
+            </xpath>
+        </template>    
+    </data>
+</odoo>

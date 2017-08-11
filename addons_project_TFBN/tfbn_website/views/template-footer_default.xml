@@ -1,0 +1,92 @@
+<!-- 
+	The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+	Copyright (C) 2017 Marc Lijour
+	https://www.linkedin.com/in/marclijour
+	https://github.com/marclijour
+
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<odoo>
+    <data>	
+        <template id="website.footer_default" inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+          <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="container hidden-print">
+              <div class="row">
+                <div class="col-md-4 col-lg-3">
+                  <h4>Our Products &amp; Services</h4>
+                  <ul class="list-unstyled" id="products">
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4  col-lg-3" id="info">
+                  <h4>Connect with us</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="/page/website.contactus">Contact us</a>
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li t-ignore="true">
+                      <i class="fa fa-phone"/>
+                      <span t-field="res_company.phone"/>
+                    </li>
+                    <li t-ignore="true">
+                      <i class="fa fa-envelope"/>
+                      <span t-field="res_company.email"/>
+                    </li>
+                  </ul>
+                  <h2>
+                    <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                      <i class="fa fa-facebook-square"/>
+                    </a>
+                    <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                      <i class="fa fa-twitter"/>
+                    </a>
+                    <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                      <i class="fa fa-linkedin"/>
+                    </a>
+                    <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                      <i class="fa fa-youtube-play"/>
+                    </a>
+                    <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                      <i class="fa fa-google-plus-square"/>
+                    </a>
+                    <a t-att-href="website.social_github" t-if="website.social_github">
+                      <i class="fa fa-github"/>
+                    </a>
+                  </h2>
+                </div>
+                <div class="col-md-4 col-lg-5 col-lg-offset-1">
+                  <h4>
+                    <span t-field="res_company.name"/>
+                    <small> - <a href="/page/website.aboutus">About us</a></small>
+                  </h4>
+                  <div>
+                    <div class="oe_share s_share">
+                      <h3><span>Share</span><a target="_Blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F144.217.13.193%2Fpage%2Fmembership"><i class="fa fa-facebook-square"/></a><a target="_Blank" class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=membership%20%7C%20My%20Website&amp;url=https%3A%2F%2F144.217.13.193%2Fpage%2Fmembership"><i class="fa fa-twitter"/></a><a target="_Blank" class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2F144.217.13.193%2Fpage%2Fmembership&amp;title=membership%20%7C%20My%20Website&amp;"><i class="fa fa-linkedin"/></a><a target="_Blank" class="oe_share_google" href="https://plus.google.com/share?url=https%3A%2F%2F144.217.13.193%2Fpage%2Fmembership"><i class="fa fa-google-plus-square"/></a><a href="mailto:?body=https%3A%2F%2F144.217.13.193%2Fpage%2Fmembership&amp;subject=membership%20%7C%20My%20Website"><i class="fa fa-envelope-o"/></a>&amp;nbsp;</h3>
+                    </div>
+                    <p>The Toronto French Business Network aims to become the preferred network for French businesses in Ontario and their Canadian partners. It will represent entrepreneurs as well as major groups, through individuals. The goal is to gather and organize the French business community and open it to the English-speaking worlds and Ontario francophones, through our expertise and our dedicated networks.&#13;</p>
+                    <p>&#13;</p>
+                    <p>The Toronto French Business Network aims to become an influential force, autonomous and sustainable in the Canadian landscape.</p>
+                  </div>
+                  <t t-call="website.language_selector"/>
+                </div>
+              </div>
+            </div>
+          </xpath>
+        </template>
+    </data>
+</odoo>
