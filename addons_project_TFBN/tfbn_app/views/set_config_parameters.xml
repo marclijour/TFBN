@@ -1,0 +1,47 @@
+<!-- 
+		The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+	  Copyright (C) 2017 Marc Lijour
+		https://www.linkedin.com/in/marclijour
+		https://github.com/marclijour
+
+		This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<odoo>
+	<!-- Setting Company data programmatically
+		 See also models.py for the Python code
+		 see https://www.odoo.com/fr_FR/forum/aide-1/question/how-to-override-your-company-data-through-a-custom-module-in-v8-87510 
+	-->
+	<data noupdate="1">
+		<function model="res.company" name="set_tfbn_company_data"/> <!-- calling set_tfbn_company_data() from models.py -->
+		<function model="website" name="set_website_settings"/> 	<!-- call set_website_settings() -->
+
+			<!-- Another way to set up the signup parameters vs. the record, then the function (in that order) below
+					 See https://www.odoo.com/forum/help-1/question/how-to-update-a-module-s-config-settings-from-another-module-28230
+					 Or use this function call to the method in class within models.py
+					 <function model="my.config.settings" name="set_signup_parameters"/> 
+			-->
+			<record model="base.config.settings" id="tfbn_app.signup_settings">
+				<field name="auth_signup_uninvited" eval="1"/>	
+				<field name="auth_signup_reset_password" eval="1"/>	
+			</record>
+			<function model="base.config.settings" name="execute">
+				<!-- ids = -->			<value eval="[ref('tfbn_app.signup_settings')]"/>
+				<!-- context = -->	<value eval="{}"/>
+			</function>
+			<!-- end -->
+
+	</data>
+
+</odoo>
+
