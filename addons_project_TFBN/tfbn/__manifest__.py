@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#	The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+#	The TFBN Application (tfbn) is an Odoo module that encapsulates the features required on top of the base community version.
 #	Copyright (C) 2017 Marc Lijour
 #   https://www.linkedin.com/in/marclijour
 #   https://github.com/marclijour
@@ -30,7 +30,7 @@
 
     'author': "Marc Lijour",
     'website': "https://www.linkedin.com/in/marclijour/",
-    'license': "LGPL-3",
+    'license': "AGPL-3",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
@@ -39,15 +39,12 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'l10n_ca', 'tfbn_website',
-				'crm', 'website_sale', 'membership', 'event', 'payment_paypal'],
-
     'depends': ['base', 'l10n_ca',      # base Odoo and Canadian context (incl. accounting)
                 'website',              # the website builder
                 'website_embed',        # paid module to add third-party boostrap snippets
                 'auth_signup',          # allows user to self-register
                 'membership',           # to manage memberships
-#                'crm',
+                'website_crm',          # adds contact form, and pulls in crm, website_form, website_partner
 #                'website_sale',        # pulls in 'sale', 'website', 'payment', etc
 #                'payment_paypal',      # pulls in 'payment'
 #                'website_event',       # pulls in 'event', 'website'
@@ -55,8 +52,6 @@
 #                'website_forum',       # member-only forum
                                ],
 
-
-	# TODO add embedded HTML
 
     # always loaded
     'data': [
@@ -71,3 +66,4 @@
     #    'demo/demo.xml',
     #],
 }
+

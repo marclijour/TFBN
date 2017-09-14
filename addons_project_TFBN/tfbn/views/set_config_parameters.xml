@@ -1,5 +1,5 @@
 <!-- 
-		The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+		The TFBN Application (tfbn) is an Odoo module that encapsulates the features required on top of the base community version.
 	  Copyright (C) 2017 Marc Lijour
 		https://www.linkedin.com/in/marclijour
 		https://github.com/marclijour
@@ -31,12 +31,12 @@
 					 Or use this function call to the method in class within models.py
 					 <function model="my.config.settings" name="set_signup_parameters"/> 
 			-->
-			<record model="base.config.settings" id="tfbn_app.signup_settings">
+			<record model="base.config.settings" id="tfbn.signup_settings">
 				<field name="auth_signup_uninvited" eval="1"/>	
 				<field name="auth_signup_reset_password" eval="1"/>	
 			</record>
 			<function model="base.config.settings" name="execute">
-				<!-- ids = -->			<value eval="[ref('tfbn_app.signup_settings')]"/>
+				<!-- ids = -->			<value eval="[ref('tfbn.signup_settings')]"/>
 				<!-- context = -->	<value eval="{}"/>
 			</function>
 			<!-- end -->

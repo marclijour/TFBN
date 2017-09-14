@@ -1,5 +1,5 @@
 <!-- 
-	The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+	The TFBN Application (tfbn) is an Odoo module that encapsulates the features required on top of the base community version.
 	Copyright (C) 2017 Marc Lijour
 	https://www.linkedin.com/in/marclijour	
 	https://github.com/marclijour
@@ -19,7 +19,7 @@
 -->
 <odoo>
 	<data>
-		<template id="tfbn_app.signup" inherit_id="auth_signup.fields" name="Additional fields for TFBN member registration">
+		<template id="tfbn.signup" inherit_id="auth_signup.fields" name="Additional fields for TFBN member registration">
 			<xpath expr="//div[@class='form-group field-name']" position="after">
 				<div class="form-group field-company_name">
 					<label for="company_name" class="control-label">Company</label>

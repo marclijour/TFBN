@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#	The TFBN Application (tfbn_app) is an Odoo module that encapsulates the features required on top of the base community version.
+#	The TFBN Application (tfbn) is an Odoo module that encapsulates the features required on top of the base community version.
 #	Copyright (C) 2017 Marc Lijour
 #   https://www.linkedin.com/in/marclijour
 #   https://github.com/marclijour
@@ -20,7 +20,7 @@
     'name': "TFBN Website",
 
     'summary': """
-        This module contains the website of the TFBN.""",
+        This module supports the TFBN application (tfbn) with the website content.""",
 
     'description': """
         The Website of the TFBN includes static pages, menu configuration items, and styling.
@@ -47,7 +47,7 @@
         'views/template-homepage.xml',
         'views/template-layout_footer_copyright.xml',
         'views/template-footer_default.xml',
-        'views/template-about-us.xml',
+        'views/template-aboutus.xml',
         'views/template-programs_and_services.xml',
         'views/template-membership.xml',
     ],
