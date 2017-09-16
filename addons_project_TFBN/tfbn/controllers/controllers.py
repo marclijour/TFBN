@@ -34,8 +34,9 @@ class MyAuthSignupHome(AuthSignupHome):
     # The rest is the same
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
-        values = { key: qcontext.get(key) for key in ('login', 'name', 'password', 
-                                                      'company_name', 'function' # Added two fields
+        values = { key: qcontext.get(key) for key in ('login', 'password',        # removed 'name' field (computed below) 
+                                                      'company_name', 'function', # added two fields
+                                                      'x_firstname', 'x_lastname' # requiring both
                                                      ) }
         _logger.info(qcontext.get('policy'))
         assert qcontext.get('policy') != 'checked', "You need to accept the terms and conditions to become a member."
@@ -44,8 +45,8 @@ class MyAuthSignupHome(AuthSignupHome):
         supported_langs = [lang['code'] for lang in request.env['res.lang'].sudo().search_read([], ['code'])]
         if request.lang in supported_langs:
             values['lang'] = request.lang
+        values['name'] = values['x_firstname'] + " " + values['x_lastname'] 
         self._signup_with_values(qcontext.get('token'), values) # calls signup() on ResUsers, then authenticates or fails
         request.env.cr.commit()
-
 
 

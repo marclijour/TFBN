@@ -18,96 +18,103 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-    <data>	
-		<template id="website.aboutus" name="About Us" page="True">
-            <t t-name="website.aboutus">
-              <t t-call="website.layout">
-                <div id="wrap" class="oe_structure oe_empty">
-                  <section class="s_text_block_image_fw oe_img_bg" style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_05&quot;);">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 mt64 mb64 bg-black-25">
-                          <h3 class="mt0">Connecting&amp;nbsp;<br/></h3>
-                          <p>Structuring and representing the French community and developping the connections with the Canadian business community.<br/></p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="s_features">
-                    <div class="container">
-                      <div class="row mt16 mb16">
-                        <div class="col-md-4 text-center">
-                          <span class="fa fa-heart fa-5x"/>
-                          <h3 class="mt8 mb0">Vision</h3>
-                          <p class="text-muted">A contributory, autonomous and sustainable community, made of business people led by common values and interests. This network supports French business culture in Ontario through opportunities, events and joint projects in the long term.</p>
-                        </div>
-                        <div class="col-md-4 text-center">
-                          <span class="fa fa-suitcase fa-5x" data-original-title="" title=""/>
-                          <h3 class="mt8 mb0">Values</h3>
-                          <p class="text-muted">Being originally a French network, it is important that its members adhere firstly to French values. Of course, the republican and democratic ideals, Liberty, Equality and Fraternity must be the first to come to mind. But we urge you to also share the “joie de vivre”, humor and good mood, tolerance and respect for others. </p>
-                          <p class="text-muted"> </p>
-                          <p class="text-muted">As a business network, it is also important that members show solidarity, generosity and mutual assistance, and act with honesty and integrity. Accessible to all, the network can only exist on the basis of exchanges in the acceptance that to receive, we must also know how to give. </p>
-                          <p class="text-muted"> </p>
-                          <p class="text-muted">Finally, we urge everyone to keep an open mind and demonstrate curiosity.</p>
-                        </div>
-                        <div class="col-md-4 text-center">
-                          <span class="fa fa-lock fa-5x"/>
-                          <h3 class="mt8 mb0">Objectives</h3>
-                          <p class="text-muted">The Toronto French Business Network aims to become the preferred network for French businesses in Ontario and their Canadian partners. It will represent entrepreneurs as well as major groups, through individuals. The goal is to gather and organize the French business community and open it to thr English-speaking worlds and Ontario francophones, through our expertise and our dedicated networks. </p>
-                          <p class="text-muted"> </p>
-                          <p class="text-muted">The Toronto French Business Network aims to become an influential force, autonomous and sustainable in the Canadian landscape.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="s_title">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <h1 align="center">Meeting the Board<br/></h1>
-                          <div align="center">Introduce your content in few lines</div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="s_three_columns">
-                    <div class="container">
-                      <div class="row">
-                        <div class="mt32 mb48 col-md-3">
-                          <img class="img img-responsive" src="/web/image/website.library_image_11" alt="Odoo - Sample 1 for three columns" data-original-title="" title=""/>
-                          <h4 class="mt16 o_default_snippet_text">Feature One</h4>
-                          <p class="o_default_snippet_text"> Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action. </p>
-                        </div>
-                        <div class="mt32 mb48 col-md-3">
-                          <img class="img img-responsive" src="/web/image/website.library_image_13" alt="Odoo - Sample 2 for three columns" data-original-title="" title=""/>
-                          <h4 class="mt16 o_default_snippet_text">Feature Two</h4>
-                          <p class="o_default_snippet_text"> To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy. </p>
-                        </div>
-                        <div class="mt32 mb48 col-md-3">
-                          <img class="img img-responsive" src="/web/image/website.library_image_07" alt="Odoo - Sample 3 for three columns" data-original-title="" title=""/>
-                          <h4 class="mt16 o_default_snippet_text">Feature Three</h4>
-                          <p class="o_default_snippet_text"> Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's <em class="o_default_snippet_text">rounded corner</em> style. </p>
-                        </div>
-                        <div class="mt32 mb48 col-md-3">
-                          <img class="img img-responsive" src="/web/image/website.library_image_07" alt="Odoo - Sample 3 for three columns" data-original-title="" title=""/>
-                          <h4 class="mt16 o_default_snippet_text">Feature Three</h4>
-                          <p class="o_default_snippet_text"> Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's <em class="o_default_snippet_text">rounded corner</em> style. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </t>
-            </t>
-		</template>
+  <data>
+		<template id="website.about-us" name="About Us" page="True">
+    <t t-name="website.about-us">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+          <section class="s_text_block_image_fw oe_img_bg mb0"
+          style="background-image: url(/web/image/website.s_background_image_02); background-position: 50% 100%;">
 
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mb16 mt16 bg-black-25">
+                  <h3 class="mt0">
+                    <span style="font-size: 48px;">About Us</span>
+                  </h3>
+                  <p>
+                    <font style="font-size: 18px;">Structuring and
+                    representing the French community and
+                    developping the connections with the Canadian
+                    business community.</font>
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_features">
+            <div class="container">
+              <div class="row mt16 mb16">
+                <div class="col-md-4 text-center">
+                  <span class="fa fa-heart fa-5x"
+                  data-original-title="" title="" />
+                  <h3 class="mt8 mb0">Vision</h3>
+                  <p class="text-muted">
+                    <br />
+                  </p>
+                  <p class="text-muted">We
+                  represent&amp;nbsp;entrepreneurs as well as major
+                  groups, through individuals. We are a community
+                  led by common values and interests, which
+                  &amp;nbsp;contributes in a sustainable way to the
+                  development of Ontario.
+                  <br /></p>
+                  <p class="text-muted">Our network supports French
+                  business culture in Ontario through
+                  opportunities, events and joint projects in the
+                  long term.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <span class="fa fa-suitcase fa-5x"
+                  data-original-title="" title="" />
+                  <h3 class="mt8 mb0">Values</h3>
+                  <p class="text-muted">
+                    <br />
+                  </p>
+                  <p class="text-muted">Being originally a French
+                  network, we are attached to the ideals of
+                  Liberty, Equality and Fraternity. But we also
+                  live by the &#226;&#8364;&#339;joie de
+                  vivre&#226;&#8364;, humor, good mood, tolerance
+                  and respect for others.</p>
+                  <p class="text-muted"></p>
+                  <p class="text-muted">As a business network, this
+                  translates into: solidarity: help&amp;nbsp;others
+                  in need, mutual cooperation: work together for a
+                  greater success, integrity: act for the benefit
+                  of the community.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <span class="fa fa-lock fa-5x" />
+                  <h3 class="mt8 mb0">Objectives</h3>
+                  <p class="text-muted">
+                    <br />
+                  </p>
+                  <p class="text-muted">The Toronto French Business
+                  Network aims to be&amp;nbsp;the preferred network
+                  for French businesses in Ontario and their
+                  Canadian partners.</p>
+                  <p class="text-muted">Our goal is to foster the
+                  development of the French business community and
+                  its collaboration with English and French
+                  speaking communities across the Greater Toronto
+                  Area.&amp;nbsp; &amp;nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+		</t>
+	</template>
+	
 		<!-- Adds a menu item -->
-		<record id="website.aboutus" model="website.menu">
+		<record id="website.about-us" model="website.menu">
 		  <field name="name">About Us</field>
-		  <field name="url">/page/aboutus</field>
+		  <field name="url">/page/about-us</field>
 		  <field name="parent_id" ref="website.main_menu" />
 		  <field name="sequence" type="int">99</field>
 		</record>
-
-    </data>
+  </data>
 </odoo>

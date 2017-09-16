@@ -18,4 +18,24 @@
 #	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from . import settings, user
+from odoo import models, fields, api
+
+import os
+
+import logging
+_logger = logging.getLogger(__name__)
+
+# To add first name and last name to the person record
+class ResUser(models.Model):
+    _inherit = 'res.users'
+
+    x_firstname = fields.Char(
+        string="First Name",             # Optional label of the field
+        help='A person\' first name',    # Help tooltip text
+    )
+
+    x_lastname = fields.Char(
+        string="Last Name",             # Optional label of the field
+        help='A person\' last name',    # Help tooltip text
+    )
+

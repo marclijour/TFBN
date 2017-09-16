@@ -18,129 +18,132 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-    <data>	
+	<data>
 		<template id="website.programs-services" name="Programs and Services" page="True">
-			<t t-name="website.programs-services">
-			  <t t-call="website.layout">
-				<div id="wrap" class="oe_structure oe_empty">
-				  <section class="jumbotron s_big_message oe_img_bg" style="background-image: url(&quot;/web/image/website.s_background_image_09&quot;);">
-					<div class="container">
-					  <div class="row">
-						<div class="mb0 col-md-6 mt32">
-						  <h1>
-						    <font class="text-black" style="font-size: 48px;">Grow your business with the French Community</font>
-						  </h1>
-						  <p class="o_default_snippet_text">
-						    <font class="text-black" style="">Write one sentence to convince visitor about your message.</font>
-						  </p>
-						  <a class="btn btn-warning btn-lg o_default_snippet_text" href="/page/website.contactus">Contact us</a>
-						</div>
-					  </div>
-					</div>
-				  </section>
-				  <section class="s_feature_grid">
-					<div class="container">
-					  <div class="row">
-						<div class="col-md-4">
-						  <div class="col-md-12 mt16 mb16">
-						    <h3 class="mb0 o_default_snippet_text">List of Features</h3>
-						    <h5 class="text-muted mb16 o_default_snippet_text" align="left">Add a great slogan</h5>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-comment pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Change Icons</h4>
-						    <p class="o_default_snippet_text">Click on the icon to adapt it to your feature</p>
-						    <br/>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-columns pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Duplicate</h4>
-						    <p class="o_default_snippet_text">Duplicate blocks to add more features.</p>
-						    <br/>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-user pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Delete Blocks</h4>
-						    <p class="o_default_snippet_text">Select and delete blocks to remove some features.</p>
-						    <br/>
-						  </div>
-						</div>
-						<div class="col-md-4">
-						  <div class="col-md-12 mt16 mb16">
-						    <h3 class="mb0 o_default_snippet_text">Second List</h3>
-						    <h5 class="text-muted mb16 o_default_snippet_text">Add a great slogan</h5>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-magic pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Great Value</h4>
-						    <p class="o_default_snippet_text">Tell features the visitor would like to know, not what you'd like to say.</p>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-bolt pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Change Background</h4>
-						    <p class="o_default_snippet_text">From the main container, you can change the background to highlight features.</p>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-picture-o pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Sample images</h4>
-						    <p class="o_default_snippet_text">All these icons are licensed under creative commons so that you can use them.</p>
-						  </div>
-						</div>
-						<div class="col-md-4">
-						  <div class="col-md-12 mt16 mb16">
-						    <h3 class="mb0 o_default_snippet_text">Second List</h3>
-						    <h5 class="text-muted mb16 o_default_snippet_text">Add a great slogan</h5>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-magic pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Great Value</h4>
-						    <p class="o_default_snippet_text">Tell features the visitor would like to know, not what you'd like to say.</p>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-bolt pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Change Background</h4>
-						    <p class="o_default_snippet_text">From the main container, you can change the background to highlight features.</p>
-						  </div>
-						  <div class="col-md-12">
-						    <span style="min-width: 45px" class="fa fa-2x fa-picture-o pull-left mb16"/>
-						    <h4 class="mt0 mb0 o_default_snippet_text">Sample images</h4>
-						    <p class="o_default_snippet_text">All these icons are licensed under creative commons so that you can use them.</p>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </section>
-				  <section class="parallax s_parallax oe_img_bg" style="background-image: url(&quot;/web/image/website.s_background_image_07&quot;);" data-scroll-background-ratio="0.3">
-					<div class="oe_structure"/>
-				  </section>
-				  <section class="s_references bg-gray-lighter">
-					<div class="container">
-					  <div class="row">
-						<div class="col-md-2 mt48">
-						  <h4 class="mt16 text-center">Our Sponsor<br/></h4>
-						</div>
-						<div class="col-md-2 col-sm-3 col-xs-6 mt16 mb16">
-						  <img src="/web/image/website.s_reference_demo_image_1" class="img img-responsive " alt="Demo Logo"/>
-						</div>
-						<div class="col-md-2 col-sm-3 col-xs-6 mt16 mb16">
-						  <img src="/web/image/website.s_reference_demo_image_2" class="img img-responsive " alt="Demo Logo"/>
-						</div>
-						<div class="col-md-2 col-sm-3 col-xs-6 mt16 mb16">
-						  <img src="/web/image/website.s_reference_demo_image_3" class="img img-responsive " alt="Demo Logo"/>
-						</div>
-						<div class="col-md-2 col-sm-3 col-xs-6 mt16 mb16">
-						  <img src="/web/image/website.s_reference_demo_image_4" class="img img-responsive " alt="Demo Logo"/>
-						</div>
-						<div class="col-md-2 col-sm-3 col-xs-6 mt16 mb16">
-						  <img src="/web/image/website.s_reference_demo_image_5" class="img img-responsive " alt="Demo Logo"/>
-						</div>
-					  </div>
-					</div>
-				  </section>
-				</div>
-			  </t>
-			</t>
-		</template>
+    <t t-name="website.programs-services">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+          <section class="jumbotron s_big_message oe_img_bg"
+          style="background-image: url(&quot;/web/image/website.s_background_image_02&quot;);">
+
+            <div class="container">
+              <div class="row">
+                <div class="mb0 col-md-10 mt0">
+                  <h1>
+                    <font class="bg-epsilon text-white"
+                    style="font-size: 48px;">Grow your business
+                    with the French Community</font>
+                  </h1>
+                  <p>
+                    <font class="text-white" style="">
+                      <b>We welcome you, we are here to help and to
+                      support you in your growth</b>
+                    </font>
+                  </p>
+                  <a class="btn btn-warning btn-lg o_default_snippet_text"
+                  href="/page/website.contactus">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_feature_grid">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="col-md-12 mt16 mb16">
+                    <h3 class="mb0">Welcome/Bienvenue</h3>
+                    <h5 class="mb16 text-muted">New comers, new
+                    businesses</h5>
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-user fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mt0 mb0">Connections</h4>
+                    <p>We connect you with the relevant ressources
+                    and people &amp;nbsp;</p>
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-file-o fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mb0 mt0">Information
+                    <br /></h4>
+                    <p>We can provide you the key information to
+                    accelerate your entry to the local market.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col-md-12 mt16 mb16">
+                    <h3 class="mb0">We are here to help</h3>
+                    <h5 class="text-muted mb16" align="left">
+                    Leverage our network and members to...</h5>
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-binoculars fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mt0 mb0">Hire</h4>
+                    <p>Hire talents, connect with other
+                    employers</p>
+                    <br />
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-compress fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mb0 mt0">Prospect</h4>
+                    <p>Find new clients or partners</p>
+                    <br />
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-bar-chart-o fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mt0 mb0">Grow</h4>
+                    <p>Financing or legal needs, we can help to
+                    connect with professionals&amp;nbsp;</p>
+                    <br />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col-md-12 mt16 mb16">
+                    <h3 class="mb0">Entrepreneur Program</h3>
+                    <h5 class="mb16 text-muted">Be challenged in
+                    your business to grow</h5>
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-slideshare fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mt0 mb0">Discuss with peers</h4>
+                    <p>Connect with other entrepreneurs to share
+                    your challenges and best practices
+                    &amp;nbsp;</p>
+                  </div>
+                  <div class="col-md-12">
+                    <span style="min-width: 45px"
+                    class="pull-left mb16 fa fa-dollar fa-2x"
+                    data-original-title="" title="" />
+                    <h4 class="mb0 mt0">Prepare your financing
+                    <br /></h4>
+                    <p>Fund raising from business angels, VC, or
+                    bank financing, we can challenge your business
+                    plan and pitch</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="parallax s_parallax oe_img_bg"
+          style="background-image: url(&quot;/web/image/website.s_background_image_07&quot;);"
+          data-scroll-background-ratio="0.3">
+            <div class="oe_structure" />
+          </section>
+        </div>
+      </t>
+		</t>
+	</template>
 
 		<!-- Adds a menu item -->
 		<record id="website.programs-services" model="website.menu">
@@ -149,6 +152,5 @@
 		  <field name="parent_id" ref="website.main_menu" />
 		  <field name="sequence" type="int">90</field>
 		</record>
-
-    </data>
+  </data>
 </odoo>

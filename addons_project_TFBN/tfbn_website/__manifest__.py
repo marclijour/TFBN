@@ -50,6 +50,7 @@
         'views/template-aboutus.xml',
         'views/template-programs_and_services.xml',
         'views/template-membership.xml',
+        'views/template-terms-and-conditions.xml',
     ],
 
     "auto_install": False,

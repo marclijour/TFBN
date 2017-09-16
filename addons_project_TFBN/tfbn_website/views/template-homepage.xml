@@ -18,99 +18,78 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-    <data>	
+	<data>
 		<template id="website.homepage" name="Homepage" page="True">
-            <t name="Homepage" priority="29" t-name="website.homepage">
-              <t t-call="website.layout">
-                <t t-set="pageName" t-value="'homepage'"/>
-                <div id="wrap" class="oe_structure oe_empty">
-                  <section class="s_text_block oe_img_bg" style="background-image: url(&quot;/web/image/website.s_background_image_01&quot;);">
-                    <div class="container">
-                      <h2 class="text-center">Toronto French Business Network</h2>
-                      <div class="row">
-                        <div class="col-md-12 mt16 mb64">
-                          <p class="text-center">
-                            <b>We mean Business</b>
-                            <br/>
-                          </p>
-                          <p class="text-center"> The Toronto French Business Network brings together the skills, experiences and energies of Francophone players in Toronto’s&amp;nbsp;business community, in order to be&amp;nbsp;a key support to French initiatives&amp;nbsp;in Ontario</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="s_text_image">
-                    <div class="container">
-                      <div class="row">
-                        <div class="mt64 mb32 col-md-7"><div class="col-md-8 media-content"><h3 class="mt0">For its Members, and By its Members</h3><p>TFBN leverages the networks of its members to help and support individual and businesses in their professional career and business life.</p><p>Bringing together the French speaking community and the business community in the Greater Toronto Area, the TFBN helps people and businesses to connect.<br/></p><div class="oe_share s_share"><a target="_blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F144.217.13.193%2F"> </a><a target="_blank" class="oe_share_twitter fa-1x" href="https://twitter.com/intent/tweet?text=Homepage%20%7C%20My%20Website&amp;url=https%3A%2F%2F144.217.13.193%2F"> </a><a target="_blank" class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2F144.217.13.193%2F&amp;title=Homepage%20%7C%20My%20Website&amp;"> </a><a target="_blank" class="oe_share_google" href="https://plus.google.com/share?url=https%3A%2F%2F144.217.13.193%2F"> </a><a href="mailto:?body=https%3A%2F%2F144.217.13.193%2F&amp;subject=Homepage%20%7C%20My%20Website"> </a></div></div>. </div>
-                        <div class="mt32 mb32 col-md-5">
-                          <img class="img img-responsive pull-left mb16" src="/web/image/website.s_text_image_default_image" alt="Odoo text and image block" data-original-title="" title=""/>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="s_image_text">
-                    <div class="container">
-                      <div class="row">
-                        <div class="mb0 mt0 col-md-4">
-                          <img class="img img-responsive center-block mb16" src="/web/image/website.s_image_text_default_image" alt="Odoo image and text block" data-original-title="" title=""/>
-                        </div>
-                        <div class="mt64 mb32 col-md-7">
-                          <h3 class="mt0">Networking events with panel discussion</h3>
-                          <p>At the centre of our services are monthly events facilitating networking. The agenda of our events mixes panel discussion with networking time. All the presentations and panels are held in English and the majority of our members are bilingual. Obviously if 2 French speaking individual meet, French will probably the language chosen, but it is up to you !</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg" style="background-image: url(&quot;/web/image/website.s_parallax_slider_default_image&quot;);" data-scroll-background-ratio="0.3">
-                    <div>
-                      <div>
-                        <div class="oe_structure">
-                          <div id="myCarousel1497471571964" class="carousel quotecarousel slide mb0" data-interval="10000">
-                            <ol class="carousel-indicators mb0">
-                              <li data-target="#myCarousel1497471571964" data-slide-to="0" class="active"/>
-                              <li data-target="#myCarousel1497471571964" data-slide-to="1"/>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="item text_only active">
-                                <div class="container">
-                                  <div class="content">
-                                    <div class="row">
-                                      <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
-                                        <p class="o_default_snippet_text"> Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services. </p>
-                                        <small class="o_default_snippet_text">Author of this quote</small>
-                                      </blockquote>
-                                    </div>
-                                    <div class="well s_well clearfix">
-                                      <p class="o_default_snippet_text"> Explain the benefits you offer. Don't write about products or services here, write about solutions. </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="item text_only">
-                                <div class="container">
-                                  <div class="content">
-                                    <div class="row">
-                                      <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
-                                        <p> The TFBN is part of my monthly agenda, I meet friends, business partners and develop new connections. It is amazing to see how TFBN connects French people disseminated accross the GTA and English canadian as well&amp;nbsp;</p>
-                                        <small>Eric, Member since 2016</small>
-                                      </blockquote>
-                                    </div>
-                                    <div class="well s_well clearfix">
-                                      <p>Connecting people, supporting businesses, facilitating hiring, representing the business community.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </t>
-            </t>
-		</template>
+    <t name="Homepage" priority="29" t-name="website.homepage">
+      <t t-call="website.layout">
+        <t t-set="pageName" t-value="'homepage'" />
+        <div id="wrap" class="oe_structure oe_empty">
+          <section class="s_text_block mb32 oe_img_bg"
+          style="background-image: url(&quot;/web/image/website.s_background_image_02&quot;);">
 
-    </data>
+            <div class="container">
+              <h2 class="text-center">
+                <font class="bg-epsilon" style="">Toronto French
+                Business Network</font>
+              </h2>
+              <div class="row">
+                <div class="mt8 col-md-offset-1 col-md-10 mb0">
+                  <p class="text-center">
+                    <b>&amp;nbsp;</b>
+                    <font style="font-size: 18px;">The Toronto
+                    French Business Network brings together the
+                    skills, experiences and energies of
+                    Francophones in the Greater Toronto Area to
+                    foster French initiatives&amp;nbsp;in
+                    Ontario</font>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_three_columns mb32">
+            <div class="container">
+              <div class="row">
+                <div class="mt32 mb48 col-md-6">
+                  <h4 class="mt16">For its Members, and By its
+                  Members</h4>
+                  <p>TFBN leverages the networks of its members to
+                  help and support individual and businesses in
+                  their professional career and business life.</p>
+                  <p class="o_default_snippet_text">Bringing
+                  together the French speaking community and the
+                  business community in the Greater Toronto Area,
+                  the TFBN helps people and businesses to
+                  connect.</p>
+                </div>
+                <div class="mt32 mb48 col-md-6">
+                  <h4 class="mt16">Join us for our networking
+                  events (every month)</h4>
+                  <p class="o_default_snippet_text">At the centre
+                  of our services are monthly events facilitating
+                  networking. The agenda of our events mixes panel
+                  discussion with networking time. All the
+                  presentations and panels are held in English and
+                  the majority of our members are bilingual.
+                  Obviously if 2 French speaking individual meet,
+                  French will probably the language chosen, but it
+                  is up to you !</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg"
+          style="background-image: url(&quot;/web/image/website.s_parallax_slider_default_image&quot;);"
+          data-scroll-background-ratio="0.3">
+            <div>
+              <div>
+                <div class="oe_structure" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+		</t>
+	</template>
+  </data>
 </odoo>

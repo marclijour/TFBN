@@ -18,127 +18,43 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-    <data>	
-		<template id="website.membership" name="About Us" page="True">
-            <t t-name="website.membership">
-              <t t-call="website.layout">
-                <div id="wrap" class="oe_structure oe_empty">
-                  <section class="s_text_block mt0">
+	<data>
+		<template id="website.membership" name="Membership" page="True">
+    <t t-name="website.membership">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+          <section class="s_text_block mt0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mb16 mt16">
+                  <section class="s_text_block">
                     <div class="container">
+                      <h2 class="text-center">Become a member</h2>
                       <div class="row">
-                        <div class="col-md-12 mb16 mt16">
-                          <section class="s_text_block">
-                            <div class="container">
-                              <h2 class="text-center">Become a member</h2>
-                              <div class="row">
-                                <div class="col-md-12 mb16 mt16">
-                                  <h3 class="text-center text-muted">TFBN Members benefit from many great services<br/></h3>
-                                  <div class="row">
-                                    <div class="col-md-12 mb16 mt16">
-                                      <p>Each member, individual or business has his/her own objectives and needs.</p>
-                                      <p>We designed 3 categories of memberships valid for one calendar year. We can work a customized services and events especially for businesses.</p>
-                                      <p>Please contact us for additional information and questions.<br/></p>
-                                      <p>
-                                        <b>Not sure which membership to choose? Contact us, we will find the right one or design a personalized plan for you</b>
-                                      </p>
-                                      <p>
-                                        <b>See you soon !<br/></b>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </section>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <section class="s_comparisons">
-                    <div class="container">
-                      <h2 class="text-center">Our membership categories</h2>
-                      <div class="row">
-                        <div class="col-md-4 col-xs-12">
-                          <div class="panel panel-info">
-                            <div class="panel-heading text-center">
-                              <h3 style="margin: 0">Individual</h3>
-                              <p style="margin: 0" class="text-muted o_default_snippet_text">
-                                            Starter package
-                                        </p>
-                            </div>
-                            <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
-                              <h3 style="margin: 0">
-                                <span class="o_default_snippet_text">$</span>
-                                <b style="font-size: 60px">65</b>
-                              </h3>
-                              <div>per calendar year</div>
-                            </div>
-                            <ul class="list-group">
-                              <li class="list-group-item">Member price for our event<br/></li>
-                              <li class="list-group-item">Benefits with our partners on events and services</li>
-                              <li class="list-group-item">Access to the members' directory<br/></li>
-                            </ul>
-                            <div class="panel-footer text-center">
-                              <p class="text-muted">
-                                <i>For any one</i>
+                        <div class="col-md-12 mt0 mb0">
+                          <div class="row">
+                            <div class="col-md-12 mb16 mt16">
+                              <p>Each member, individual or
+                              business has his/her own objectives
+                              and needs.</p>
+                              <p>We designed 3 categories of
+                              memberships valid for one calendar
+                              year. We can work a customized
+                              services and events especially for
+                              businesses.</p>
+                              <p>Please contact us for additional
+                              information and questions.
+                              <br /></p>
+                              <p>
+                                <b>Not sure which membership to
+                                choose? Contact us, we will find
+                                the right one or design a
+                                personalized plan for you</b>
                               </p>
-                              <a href="/page/website.contactus" class="btn btn-primary btn-lg o_default_snippet_text">Order now</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                          <div class="panel panel-primary">
-                            <div class="panel-heading text-center">
-                              <h3 style="margin: 0">Entrepreneur and Small Companies (&amp;lt;10 employees)</h3>
-                              <p style="margin: 0" class="o_default_snippet_text">Enterprise package</p>
-                            </div>
-                            <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
-                              <h3 style="margin: 0"><span class="o_default_snippet_text">$</span>&amp;nbsp;<b style="font-size: 60px">150
-                              </b></h3>
-                              <div>per calendar year</div>
-                            </div>
-                            <ul class="list-group">
-                              <li class="list-group-item">Member price for our event</li>
-                              <li class="list-group-item">Benefits with our partners on events and services<br/></li>
-                              <li class="list-group-item">Access to the members' directory<br/></li>
-                              <li class="list-group-item">Company profile in the members' directory</li>
-                              <li class="list-group-item">Short presentation of the entrepreneur during an event (monthly event or special event)<br/></li>
-                            </ul>
-                            <div class="panel-footer text-center">
-                              <p class="text-muted">
-                                <i>Perfect if you have a business or are starting a new business.</i>
+                              <p>
+                                <b>See you soon !
+                                <br /></b>
                               </p>
-                              <a href="/page/website.contactus" class="btn btn-primary btn-lg o_default_snippet_text">Order now</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-xs-12">
-                          <div class="panel panel-info">
-                            <div class="panel-heading text-center">
-                              <h3 style="margin: 0">Corporate (&amp;gt;10 employees)</h3>
-                              <p style="margin: 0" class="text-muted o_default_snippet_text">Ultimate package</p>
-                            </div>
-                            <div class="panel-body text-center text-muted" style="background-color: rgba(0,0,0,0.1)">
-                              <h3 style="margin: 0">
-                                <span class="o_default_snippet_text">$
-                                </span>
-                                <b style="font-size: 60px">350</b>
-                              </h3>
-                              <div>per calendar year</div>
-                            </div>
-                            <ul class="list-group">
-                              <li class="list-group-item">Member price for our event<br/></li>
-                              <li class="list-group-item">Benefits with our partners on events and services<br/></li>
-                              <li class="list-group-item">Access to the members' directory<br/></li>
-                              <li class="list-group-item">Company profile in the members' directory</li>
-                              <li class="list-group-item">Organization of an event with the company (monthly event or special event)<br/></li>
-                              <li class="list-group-item">Logo as sponsors on our website and newsletters&amp;nbsp;<br/></li>
-                            </ul>
-                            <div class="panel-footer text-center">
-                              <p class="text-muted">
-                                <i>Perfect to promote your company and brand and leverage additional benefits.</i>
-                              </p>
-                              <a href="/page/website.contactus" class="btn btn-primary btn-lg" data-original-title="" title="">Order now</a>
                             </div>
                           </div>
                         </div>
@@ -146,10 +62,155 @@
                     </div>
                   </section>
                 </div>
-              </t>
-            </t>
-		</template>
-
+              </div>
+            </div>
+          </section>
+          <section class="s_comparisons">
+            <div class="container">
+              <h2 class="text-center">Our membership
+              categories</h2>
+              <div class="row">
+                <div class="col-md-4 col-xs-12">
+                  <div class="panel panel-info">
+                    <div class="panel-heading text-center">
+                      <h3 style="margin: 0">Individual</h3>
+                    </div>
+                    <div class="panel-body text-center text-muted"
+                    style="background-color: rgba(0,0,0,0.1)">
+                      <h3 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">69</b>
+                      </h3>
+                      <div>per calendar year
+                      <br />
+                      <b>$
+                      <font style="font-size: 24px;">
+                      29&amp;nbsp;</font></b>Discovery price for
+                      new members only (Sept to Dec 2017)
+                      <br />
+                      <b>$
+                      <font style="font-size: 24px;">89</font></b>
+                      <font style="font-size: 24px;">
+                      &amp;nbsp;</font>Available for all members
+                      for 16 months (Sept 2017 to
+                      Dec&amp;nbsp;2018)
+                      <br /></div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Member price for
+                      our event
+                      <br /></li>
+                      <li class="list-group-item">Benefits with our
+                      partners on events and services</li>
+                      <li class="list-group-item">Access to the
+                      members' directory
+                      <br /></li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>For anyone</i>
+                      </p>
+                      <a href="/page/website.contactus"
+                      class="btn btn-primary btn-lg o_default_snippet_text">
+                      Order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div class="panel panel-info">
+                    <div class="panel-heading text-center">
+                      <h3 style="margin: 0">Entrepreneur and Small
+                      Company 
+                      <font style="font-size: 14px;">(&amp;lt;10
+                      employees)</font></h3>
+                    </div>
+                    <div class="panel-body text-center text-muted"
+                    style="background-color: rgba(0,0,0,0.1)">
+                      <h3 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">150</b>
+                      </h3>
+                      <div>per calendar year
+                      <br /></div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Member price for
+                      our event
+                      <br /></li>
+                      <li class="list-group-item">Benefits with our
+                      partners on events and services</li>
+                      <li class="list-group-item">Access to the
+                      members' directory</li>
+                      <li class="list-group-item">Company profile
+                      in the members' directory</li>
+                      <li class="list-group-item">Short
+                      presentation of the entrepreneur during an
+                      event (monthly event or special event)</li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Perfect if you have a business or are
+                        starting a new business.</i>
+                      </p>
+                      <a href="/page/website.contactus"
+                      class="btn btn-primary btn-lg o_default_snippet_text">
+                      Order now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div class="panel panel-info">
+                    <div class="panel-heading text-center">
+                      <h3 style="margin: 0">Corporate 
+                      <font style="font-size: 14px;">(&amp;gt;10
+                      employees)</font></h3>
+                    </div>
+                    <div class="panel-body text-center text-muted"
+                    style="background-color: rgba(0,0,0,0.1)">
+                      <h3 style="margin: 0">
+                        <span>$</span>
+                        <b style="font-size: 60px">350</b>
+                      </h3>
+                      <div>per calendar year</div>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Member price for
+                      our event
+                      <br /></li>
+                      <li class="list-group-item">Benefits with our
+                      partners on events and services
+                      <br /></li>
+                      <li class="list-group-item">Access to the
+                      members' directory
+                      <br /></li>
+                      <li class="list-group-item">Company profile
+                      in the members' directory</li>
+                      <li class="list-group-item">Organization of
+                      an event with the company (monthly event or
+                      special event)
+                      <br /></li>
+                      <li class="list-group-item">Logo as sponsors
+                      on our website and newsletters&amp;nbsp;
+                      <br /></li>
+                    </ul>
+                    <div class="panel-footer text-center">
+                      <p class="text-muted">
+                        <i>Perfect to promote your company and
+                        brand and leverage additional benefits.</i>
+                      </p>
+                      <a href="/page/website.contactus"
+                      class="btn btn-primary btn-lg"
+                      data-original-title="" title="">Order now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+		</t>
+	</template>
 		<!-- Adds a menu item -->
 		<record id="website.membership" model="website.menu">
 		  <field name="name">Membership</field>
@@ -157,6 +218,5 @@
 		  <field name="parent_id" ref="website.main_menu" />
 		  <field name="sequence" type="int">95</field>
 		</record>
-
-    </data>
+  </data>
 </odoo>

@@ -25,6 +25,7 @@ import os
 import logging
 _logger = logging.getLogger(__name__)
 
+# To set the company record with TFBN data
 class ResCompany(models.Model):
     _inherit = "res.company"
 
@@ -58,6 +59,7 @@ class ResCompany(models.Model):
         _logger.info("> ... done.")
 
 
+# To set the company record with TFBN data
 class ResWebsiteSettings(models.Model):
     _inherit = "website"
 
@@ -77,6 +79,7 @@ class ResWebsiteSettings(models.Model):
         # TODO Google Analytics key
 
 
+# To enable users to register on their own through the auth_signup module
 # Use a transient model (aka 'wizard') to set base.config.parameters, ending up in ir.config_parameter
 # more info:
 # https://www.odoo.com/forum/help-1/question/how-to-change-settings-on-module-installation-72694

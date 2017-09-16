@@ -20,7 +20,15 @@
 <odoo>
 	<data>
 		<template id="tfbn.signup" inherit_id="auth_signup.fields" name="Additional fields for TFBN member registration">
-			<xpath expr="//div[@class='form-group field-name']" position="after">
+			<xpath expr="//div[@class='form-group field-name']" position="replace">
+				<div class="form-group field-x_firstname">
+					<label for="x_firstname" class="control-label">Your First Name</label>
+					<input type="text" name="x_firstname" t-att-value="x_firstname" id="x_firstname" class="form-control" placeholder="e.g. John" required="required" t-att-readonly="'readonly' if only_passwords else None" t-att-autofocus="'autofocus' if login and not only_passwords else None"/>
+				</div>
+				<div class="form-group field-x_lastname">
+					<label for="x_lastname" class="control-label">Your Last Name</label>
+					<input type="text" name="x_lastname" t-att-value="x_lastname" id="x_lastname" class="form-control" placeholder="e.g. Smith" required="required" t-att-readonly="'readonly' if only_passwords else None" t-att-autofocus="'autofocus' if login and not only_passwords else None"/>
+				</div>
 				<div class="form-group field-company_name">
 					<label for="company_name" class="control-label">Company</label>
 					<input type="text" name="company_name" t-att-value="company_name" id="company_name" class="form-control" placeholder="e.g. The French Retailer Inc." required="required"/>
@@ -35,7 +43,7 @@
 					<label for="policy" class="control-label">Terms and Conditions</label>
 					<br/>
 					<input type="checkbox" name="policy" t-att-value="policy" id="policy" required="required" />
-					<span>I accept the <a href="https://google.ca">terms and conditions</a></span> 
+					<span>I accept the <a href="/page/terms-and-conditions">terms and conditions</a></span> 
 				</div>
 			</xpath>
 		</template>

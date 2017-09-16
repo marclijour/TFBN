@@ -44,7 +44,7 @@
                 'website_embed',        # paid module to add third-party boostrap snippets
                 'auth_signup',          # allows user to self-register
                 'membership',           # to manage memberships
-                'website_crm',          # adds contact form, and pulls in crm, website_form, website_partner
+##                'website_crm',          # adds contact form, and pulls in crm, website_form, website_partner
 #                'website_sale',        # pulls in 'sale', 'website', 'payment', etc
 #                'payment_paypal',      # pulls in 'payment'
 #                'website_event',       # pulls in 'event', 'website'
@@ -58,7 +58,7 @@
         # 'security/ir.model.access.csv', TODO later
         'views/set_config_parameters.xml',  # programmatically set config parameters (company, data, favicon, config, etc)
         'views/signup_member.xml',          # tailors the auth_signup form HTML for TFBN needs
-
+#        'views/extended-res_partner_form.xml',    # to display the information from the members panel in Odoo
     ],
     
     # only loaded in demonstration mode
