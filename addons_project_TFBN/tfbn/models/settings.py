@@ -45,10 +45,10 @@ class ResCompany(models.Model):
 
         # Saving the record to the database
         self.browse(1).write({
-            'name': u"TFBN",
-            'rml_header1': u"Business with a French Touch",
+            'name': u"Toronto French Business Network (TFBN)",
+            'rml_header1': u"Driven by its members, for its members",
             'logo': logo,
-			'email': u"marc.lijour@ayanaconsulting.net", # TODO change this as required
+			'email': u"contact@tfbn.ca", # TODO change this as required
 			'website': u"https://www.tfbn.ca",
             'city': u"Toronto",
 			'state_id': id_ontario,
