@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #	The TFBN Application (tfbn) is an Odoo module that encapsulates the features required on top of the base community version.
+#   This version is compatible with Odoo version 11.0.
 #	Copyright (C) 2017 Marc Lijour
 #   https://www.linkedin.com/in/marclijour
 #   https://github.com/marclijour
