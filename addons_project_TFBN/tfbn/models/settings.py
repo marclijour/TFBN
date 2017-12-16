@@ -21,6 +21,7 @@
 from odoo import models, fields, api
 
 import os
+import base64
 
 import logging
 _logger = logging.getLogger(__name__)
@@ -36,8 +37,8 @@ class ResCompany(models.Model):
         _logger.info("> Setting TFBN company data...")
         module_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         img_path = os.path.join(module_dir, 'static/description/icon.png')
-        with open(img_path) as img:
-            logo = img.read().encode('base64')
+        with open(img_path, 'rb') as img:
+            logo = base64.b64encode(img.read())
 
         # Look-ups for known address field contents
         id_ontario  = self.env['res.country.state'].search([('name', '=', 'Ontario')]).id
@@ -68,8 +69,8 @@ class ResWebsiteSettings(models.Model):
         _logger.info("> Setting Website Configuration")
         module_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         img_path = os.path.join(module_dir, 'static/src/img/favicon-32x32.png')
-        with open(img_path) as img:
-            favicon = img.read().encode('base64')
+        with open(img_path, 'rb') as img:
+            favicon = base64.b64encode(img.read())
 
         self.browse(1).write({
             'name': u"TFBN Website",
@@ -88,13 +89,13 @@ class ResWebsiteSettings(models.Model):
 class ResBaseConfigSettings(models.TransientModel):
     _name = "my.config.settings"   # that's prototype inheritance (vs. class inheritance if omitted)
                                    # see https://www.odoo.com/documentation/10.0/howtos/backend.html#inheritance
-    _inherit = "base.config.settings"
+    _inherit = "res.config.settings"
 
     @api.model 
     def set_signup_parameters(self):
         _logger.info("> Settings sign-up parameters")
 
-        settings = self.env['base.config.settings'].create({
+        settings = self.env['res.config.settings'].create({
             'auth_signup_uninvited': True,
             'auth_signup_reset_password': True,
         })

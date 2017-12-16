@@ -27,6 +27,8 @@
 
     'description': """
         This application includes a website, a membership management system (users can register and pay online, while the system invoice them and keeps track of their status), and members-only features such as a private forum.
+
+        This particular version is compatible with Odoo v11.0.
     """,
 
     'author': "Marc Lijour",
