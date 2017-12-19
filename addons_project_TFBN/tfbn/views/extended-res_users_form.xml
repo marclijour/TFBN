@@ -1,0 +1,37 @@
+<!-- 
+	The TFBN Application (tfbn) is an Odoo module that encapsulates the features required on top of the base community version.
+	Copyright (C) 2017 Marc Lijour
+	https://www.linkedin.com/in/marclijour	
+	https://github.com/marclijour
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as
+	published by the Free Software Foundation, either version 3 of the
+	License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<odoo>
+	<data>
+		<!-- inherit res.users.form to add firstname and lastname -->
+		<record id="res_users_form_first_and_last_names" model="ir.ui.view">
+			<field name="name">res.users.form.firstandlastnames</field>
+			<field name="model">res.users</field> 
+			<field name="inherit_id" ref="base.view_users_form"/> 
+			<field name="arch" type="xml"> 
+				<xpath expr="//group/field[@name='partner_id']" position="before"> 
+					<group>
+						<field name="x_firstname" widget="x_firstname"/>
+						<field name="x_lastname" widget="x_lastname"/>
+					</group>
+				</xpath> 
+			</field> 
+		</record>
+	</data>
+</odoo>
