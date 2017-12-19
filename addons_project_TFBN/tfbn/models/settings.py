@@ -47,9 +47,9 @@ class ResCompany(models.Model):
         # Saving the record to the database
         self.browse(1).write({
             'name': u"Toronto French Business Network (TFBN)",
-            'rml_header1': u"Driven by its members, for its members",
+            #'rml_header1': u"Driven by its members, for its members",  # not in Odoo 11 anymore
             'logo': logo,
-			'email': u"contact@tfbn.ca", # TODO change this as required
+			'email': u"contact@tfbn.ca", # catch all email for information
 			'website': u"https://www.tfbn.ca",
             'city': u"Toronto",
 			'state_id': id_ontario,

@@ -62,6 +62,7 @@
         'views/set_config_parameters.xml',  # programmatically set config parameters (company, data, favicon, config, etc)
         'views/signup_member.xml',          # tailors the auth_signup form HTML for TFBN needs
         'views/extended-res_partner_form.xml',    # to display the information from the members panel in Odoo
+        'views/extended-res_users_form.xml',    # to display the first name and last name separately under the full name on the users panel
     ],
     
     # only loaded in demonstration mode
