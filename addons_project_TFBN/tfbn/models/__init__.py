@@ -18,4 +18,4 @@
 #	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from . import settings, partner
+from . import settings, user
