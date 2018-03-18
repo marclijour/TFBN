@@ -18,7 +18,6 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-    <data>	
         <template id="website.layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright">
             <xpath expr="//footer" position="inside">
                 <div class="container mt16 mb8">
@@ -34,5 +33,4 @@
                 </div>
             </xpath>
         </template>    
-    </data>
 </odoo>

@@ -44,13 +44,13 @@
 
     # always loaded
     'data': [
-        'views/template-homepage.xml',
-        'views/template-layout_footer_copyright.xml',
-        'views/template-footer_default.xml',
-        'views/template-aboutus.xml',
-        'views/template-programs_and_services.xml',
-        'views/template-membership.xml',
-        'views/template-terms-and-conditions.xml',
+        'pages/template-homepage.xml',
+        'pages/template-layout_footer_copyright.xml',
+        'pages/template-footer_default.xml',
+        'pages/template-aboutus.xml',
+        'pages/template-programs_and_services.xml',
+        'pages/template-membership.xml',
+        'pages/template-terms-and-conditions.xml',
     ],
 
     "auto_install": False,

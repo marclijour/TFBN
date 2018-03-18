@@ -18,7 +18,6 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-  <data>
 		<template id="website.about-us" name="About Us" page="True">
     <t t-name="website.about-us">
       <t t-call="website.layout">
@@ -116,5 +115,4 @@
 		  <field name="parent_id" ref="website.main_menu" />
 		  <field name="sequence" type="int">99</field>
 		</record>
-  </data>
 </odoo>

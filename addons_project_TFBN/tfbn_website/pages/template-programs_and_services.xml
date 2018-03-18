@@ -18,7 +18,6 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-	<data>
 		<template id="website.programs-services" name="Programs and Services" page="True">
     <t t-name="website.programs-services">
       <t t-call="website.layout">
@@ -152,5 +151,4 @@
 		  <field name="parent_id" ref="website.main_menu" />
 		  <field name="sequence" type="int">90</field>
 		</record>
-  </data>
 </odoo>
