@@ -18,8 +18,8 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <odoo>
-		<template id="website.homepage" name="Homepage" page="True">
-    <t name="Homepage" priority="29" t-name="website.homepage">
+		<template id="tfbn_website.homepage" name="Homepage" page="True">
+    <t name="Homepage" priority="29" t-name="tfbn_website.homepage">
       <t t-call="website.layout">
         <t t-set="pageName" t-value="'homepage'" />
         <div id="wrap" class="oe_structure oe_empty">
